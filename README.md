@@ -7,7 +7,7 @@
 | Mata Kuliah    |Basis data            |
 
 ## *SOAL LATIHAN*
-<img width="553" alt="soal praktikum6" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/49eaadb7-0aaf-4023-87d3-3ce9363e0a80">
+<img width="553" alt="soal praktikum6" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/4912d408-1255-4a5e-b12b-7cddb33430e6">
 
 
 ## Query MySQL Pada Tabel Perusahaan
