@@ -24,7 +24,7 @@ INSERT INTO Perusahaan VALUES
 SELECT * FROM Perusahaan;
 ```
 ## outputnya
-<img width="319" alt="table perusahaan" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/e581adf5-c140-43dd-ba85-b12ee8df90f8">
+<img width="319" alt="table perusahaan" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/a1ee9633-6814-458a-bbbe-c6cf4676857b">
 
 ## Query MySQL Pada Tabel Departemen
 ```
@@ -43,7 +43,7 @@ INSERT INTO Departemen VALUES
 SELECT * FROM Departemen;
 ```
 ## outputnya
-<img width="347" alt="departemen" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/eb0d88b8-b38a-4794-9676-38bc2079363d">
+<img width="347" alt="departemen" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/5aeeb9af-e269-42b2-afb3-a09166da9692">
 
 ## Query MySQL Pada Tabel Karyawan
 ```
@@ -66,7 +66,7 @@ INSERT INTO Karyawan VALUES
 SELECT * FROM Karyawan;
 ```
 # outputnya
-<img width="340" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/8e8c78e4-8fc7-4487-89dd-b7f861a94cb7">
+<img width="340" alt="karyawan" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/a5a6c00a-a954-4efc-9a60-c68b2977c7fb">
 
 # Query MySQL Pada Tabel Project
 ```
@@ -85,7 +85,7 @@ INSERT INTO Project VALUES
 SELECT * FROM Project;
 ```
 # outputnya
-<img width="420" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/54c5f3d0-dc94-40d1-ad42-3e7003a9e26e">
+<img width="420" alt="project" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/e3922777-7953-4b20-91fd-05fd96f317d7">
 
 # Query MySQL Pada Tabel Project Deatil
 ```
@@ -111,7 +111,7 @@ INSERT INTO Project_detail VALUES
 SELECT * FROM Project_detail;
 ```
 # outputnya
-<img width="490" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/91aa2361-0444-40b3-a3d0-d0935eed9d8d">
+<img width="490" alt="project detail" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/166d45c0-e17c-46be-97c4-f31d8067c393">
 
 # *Menampilkan Nama Manajer Tiap Departemen*
 ```
@@ -120,7 +120,7 @@ FROM Departemen
 LEFT JOIN Karyawan ON Karyawan.nik = Departemen.manajer_nik;
 ```
 # outputnya
-<img width="466" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/789bdf4d-3410-4360-9f82-7605e08ddf3b">
+<img width="466" alt="nama manajer" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/db1ff24a-c8b7-472d-a594-87c2cbd08671">
 
 # *Menampilkan Nama Supervisor Tiap Karyawan*
 ```
@@ -130,7 +130,7 @@ LEFT JOIN Karyawan AS Supervisor ON Supervisor.nik = Karyawan.sup_nik
 LEFT JOIN Departemen ON Departemen.id_dept = Karyawan.id_dept;
 ```
 # outputnya
-<img width="671" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/6c42eb15-5c05-4aa0-8e9b-84e02a32b342">
+<img width="671" alt="nama supervisor" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/8c3a8118-30e3-4ce4-ab66-583da282d556">
 
 # *Menampilkan Daftar Karyawan Yang Bekerja Pada Project A*
 ```
@@ -141,7 +141,7 @@ JOIN Project ON Project.id_proj = Project_detail.id_proj
 WHERE Project.nama = 'A';
 ```
 # outputnya
-<img width="367" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/0f7ad4b8-ed08-42e3-9d85-50186361ed56">
+<img width="367" alt="daftar karyawan" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/3c8f56bb-db4f-47cf-94e8-33a9f82f8f5a">
 
 # *Soal Latihan Praktikum*
 # 1. Departemen Apa Saja Yang Terlibat Dalam Tiap-tiap Project.
@@ -154,7 +154,7 @@ INNER JOIN Departemen ON Karyawan.id_dept = Departemen.id_dept
 GROUP BY Project.id_proj;
 ```
 # outputnya 
-<img width="544" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/1dd8c937-ae11-4417-bd30-0ae9b72dfd19">
+<img width="544" alt="1" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/0bfb7dad-26f9-4e7d-8437-cb16bec52403">
 
 # 2. Jumlah Karyawan Tiap Departemen Yang Bekerja Pada Tiap-tiap Project.
 ```
@@ -166,7 +166,7 @@ INNER JOIN Departemen ON Karyawan.id_dept = Departemen.id_dept
 GROUP BY Project.id_proj, Departemen.id_dept;
 ```
 # outputnya
-<img width="635" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/7d346e06-613b-4b6d-a92a-e70662228e42">
+<img width="635" alt="2" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/1b283a86-acd3-40ed-926e-98ba7cfbf8f1">
 
 # 3. Ada Berapa Project Yang Sedang Dikerjakan Oleh Departemen RnD? (ket: project berjalan adalah yang statusnya 1).
 ```
@@ -178,7 +178,7 @@ INNER JOIN Departemen ON Karyawan.id_dept = Departemen.id_dept
 WHERE Departemen.nama = 'RnD' AND Project.status = 1;
 ```
 # outputnya
-<img width="426" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/efc82fcc-71f9-49b3-ab47-0f0c28c2239e">
+<img width="426" alt="3" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/17c7a66c-aae0-4d68-88f0-1c05cd0e83a9">
 
 # 4. Berapa banyak Project yang sedang dikerjakan oleh Ari ?
 ```
@@ -188,7 +188,7 @@ INNER JOIN Karyawan ON Project_detail.nik = Karyawan.nik
 WHERE Karyawan.nama = 'Ari' AND Project_detail.id_proj IN (SELECT id_proj FROM Project WHERE status = 1);
 ```
 # outputnya
-<img width="647" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/501db567-e3b0-4ba5-944f-3ef7d8053b17">
+<img width="647" alt="4" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/a1987c77-cc61-44e4-a0d9-b4da89586374">
 
 # 5. Siapa Saja Yang Mengerjakan Project B ?
 ```
@@ -198,7 +198,7 @@ INNER JOIN Karyawan ON Project_detail.nik = Karyawan.nik
 WHERE Project_detail.id_proj IN (SELECT id_proj FROM Project WHERE nama = 'B');
 ```
 # outputnya
-<img width="485" alt="image" src="https://github.com/lutpi9/tugas-pert-13-mysql6/assets/147919251/1f0d22d1-907b-490f-bc27-e3ccff0163bd">
+<img width="485" alt="5" src="https://github.com/lutpi9/praktikum6-mysql6/assets/147919251/2817d920-1a9f-471e-b70c-ccb465f49728">
 
 ## *SELESAI SEKIAN TERIMAKASIH*
 
